@@ -1,0 +1,244 @@
+/*Taustan väri jos ei erikseen laiteta*/
+body{
+    background-color:rgb(225, 225, 222);
+}
+/*fontin koko jos ei erikseen laiteta*/
+p{
+    font-size: 20px;
+}
+/*ainesList*/
+/*Koko sivun keskitys*/
+.aines{
+    text-align: center;
+    list-style-position: inside;
+}
+/*rekisteri*/
+.rekisteri{
+    text-align: center;
+    list-style-position: inside;
+}
+.virhe{
+    color: red;
+    font-size: 15px;
+}
+.onnistu{
+    color: green;
+    font-size: 15px;
+}
+/*TIETOSUOJA*/
+.tietosuoja{
+    text-align: left;
+    background-color: rgb(158, 187, 222);
+}
+.teksti{
+    font-size: 15px;
+}
+h4{
+    font-size: 20px;
+    color: white;
+}
+/*otsikko*/
+h3{
+    font-size: 30px;
+}
+/*LISÄYS*/
+.lisays{
+    text-align: center;
+}
+/*laatikko*/
+.laatikkol{
+    height: auto;
+    width: 30%;
+    background-color: rgb(142, 212, 189);
+    border-radius: 7px;
+    margin: auto;
+}
+/*raaka aineet keskelle*/
+.taulu {
+    position: relative;
+    left: 10%;
+}
+.maara{
+    margin-left: 40px;
+}
+.nappi{
+    background-color: green;
+    color: white;
+    padding: 1px 10px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    border: 1px;
+}
+/*Tekstit*/
+.raaka{
+    color: white;
+}
+.tvirhe{
+    color: red;
+    font-size: 15px;
+}
+.tonnistu{
+    color: green;
+    font-size: 15px;
+}
+/*HAKU*/
+.haku{
+    background-color: rgb(249, 170, 170);
+    text-align: center;
+}
+/*Laatikko*/
+.laatikko{
+    height: 120px;
+    width: 20%;
+    background-color: rgb(243, 124, 124);
+    border-radius: 5%;
+    margin: auto;
+}
+/*kirjaudu*/
+.kirjaudu{
+    text-align: center;
+
+}
+/*poisto*/
+.nappip{
+    font-size: 10px;
+    background-color: darkred;
+    border-radius: 10%;
+}
+.ilmoitus{
+    color: green;
+    font-size: 17px;
+    text-align: center;
+}
+.poisto{
+    background-color: rgb(123, 238, 232); 
+    text-align: center;
+}
+/*Laatikko*/
+.poistolaatikko{
+    height: auto;
+    background-color: whitesmoke;
+    border-radius: 5%;
+    margin: auto;
+}
+/*Hyväksy Tai hylkää*/
+/*Koko sivusto*/
+.hyvaksy{
+    background-color: lightpink;
+    text-align: center;
+}
+/*Laatikko*/
+.hyvaksyl{
+    height: auto;
+    width: 25%;
+    background-color: whitesmoke;
+    border-radius: 5%;
+    margin: auto;
+}
+.o{
+    font-size: 23px;
+}
+.h{
+    color: rgb(248, 169, 183);
+    font-size: 17px;
+}
+.painah{
+    font-size: 10px;
+    background-color: green;
+    border-radius: 10%;
+}
+.painav{
+    font-size: 10px;
+    background-color: rgb(167, 6, 6);
+    border-radius: 10%;
+    margin-left: 10px;
+
+}
+.p{
+    font-size: 15px;
+    text-align: center;
+}
+/*poistakäyttäjä*/
+.kautajapois{
+    background-color: pink;
+    text-align: center;
+}
+/*Laatikko*/
+.poisk{
+    height: auto;
+    width: 25%;
+    background-color: whitesmoke;
+    border-radius: 5%;
+    margin: auto;
+}
+.nappikp{
+    font-size: 10px;
+    background-color: rgb(210, 50, 77);
+    border-radius: 10%;
+}
+/*RESEPTIN MUOKAUS*/
+.oikea{
+    text-align: right;
+}
+/*juoman nimi kenttä*/
+.nimi{
+    margin-right: 110px;
+}
+/*Juomalajin mimi kenttä*/
+.laji{
+    margin-right: 110px;
+}
+.ohje{
+    margin-right: 110px;
+}
+
+/*Responsive*/
+
+@media (max-width: 600px){
+    /*lisäys*/
+    .laatikko{
+        width: 50%;
+    }
+    /*poisto*/
+    .poistolaatikko{
+        width: 70%;
+    }
+    /*Hyväksy tai hylkää*/
+    .hyvaksyl{
+        width: 60%;
+    }
+    .poisk{
+        width: 60%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px){
+    .laatikko{
+        width: 30%;
+    }
+    .poistolaatikko{
+        width: 50%;
+    }
+    .hyvaksyl{
+        width: 35%;
+    }
+    .poisk{
+        width: 35%;
+    }
+}
+
+@media (min-width: 1025px){
+    .laatikko{
+        width: 20%;
+    }
+    .poistolaatikko{
+        width: 30%;
+    }
+    .hyvaksyl{
+        width: 25%;
+    }
+    .poisk{
+        width: 25%;
+    }
+
+}
