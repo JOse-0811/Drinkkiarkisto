@@ -13,7 +13,7 @@ add.addEventListener("click", (e)=>{
     const adde = clone.lastElementChild;
     adde.firstElementChild.innerHTML = "-";
    
-    clone.addEventListener("click", (e) => {
+    adde.lastElementChild.addEventListener("click", (e) => {
         e.stopPropagation();
         e.preventDefault();
         clone.remove();

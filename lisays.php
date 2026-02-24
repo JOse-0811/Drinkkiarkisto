@@ -84,8 +84,8 @@
             //tarkistaa ettei kentät ole tyhjiä
             if(empty($nimi) || empty($laji) || empty($ohje)){
                 echo "<p class='tvirhe'>kenttät pitää täytää</p>";
-                exit;
-            }
+                
+            } else {
             //tarkistaa onko jo olemassa
             $stmt = $yhteys->prepare("SELECT drinkki_id FROM resepti WHERE nimi = ?");
             $stmt->bind_param("s", $nimi);
@@ -95,9 +95,9 @@
             if($stmt->num_rows > 0) {
             //resepti on jo
                 echo "<p class='tvirhe'>resepti on lisätty aiemmin.</p>";
-                header("refresh:3");
-                exit;
-            }
+            
+                
+            } else {
             $onkomaara= FALSE;
             // Varmistaa, että ainakin yksi raaka-aine ja määrä on täytetty
             foreach($maara as $m){
@@ -108,8 +108,8 @@
             }
             if(!$onkomaara){
                 echo "<p class='tvirhe'>Ainakin yksi raaka aine ja maara pitää täytää</p>";
-                header("refresh:3");
-                exit;
+               
+            
             }
             // Asetetaan hyväksytty-arvo käyttäjän roolin mukaan (admin = 1, muu = 0)
             if (isset($_SESSION['rooli']) && $_SESSION['rooli'] === 'admin') {
@@ -140,6 +140,8 @@
                 }
             }
             echo "<p class='tonnistu'>Uusi resepti lisätty.</p>";
+            }
+            }
         }
     ?>
     <script src="lisaus.js"></script>

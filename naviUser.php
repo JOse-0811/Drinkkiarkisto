@@ -8,8 +8,6 @@
 <body>
     <?php
     echo "<ul>
-    <a href='rekisteri.php'>rekisteröidy</a>
-    <a href='kirjaudu.php'>Kirjaudu</a>
     <a href='ainesList.php'>ainesosien lisäys</a>
     <a href='lisays.php'>Lisää resepti</a>
     <a href='haku.php'>Hae reseptejä</a>
