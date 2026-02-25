@@ -1,3 +1,4 @@
+<?php require 'paasyadmi.php'; ?>
 <!DOCTYPE html>
 <html lang="fi">
 <head>

@@ -1,3 +1,4 @@
+<?php include_once( 'paasysivulle.php')?>
 <!DOCTYPE html>
 <html lang="fi">
 <head>
@@ -10,8 +11,9 @@
 <body class="aines">
 <!--Navikointi-->
         <?php 
-            session_start();
             include_once("yhteys.php");
+            session_start();
+        
             if (!isset($_SESSION['rooli'])) {
                 include "naviGuest.php";
             }
@@ -29,6 +31,9 @@
         <button type="submit" name="lisaa">Lisää</button>
     </form>
     <?php
+    //Päästä sivulle vain rooli 1 tai 0
+
+
     $viesti = "";
 
     //lisäys ja tarkistus

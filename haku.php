@@ -1,3 +1,4 @@
+<?php require 'paasysivulle.php'; ?>
 <!DOCTYPE html>
 <html lang="fi">
 <head>
