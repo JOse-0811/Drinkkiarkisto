@@ -1,4 +1,4 @@
-<?php include_once( 'paasysivulle.php')?>
+<?php require 'paasysivulle.php'; ?>
 <!DOCTYPE html>
 <html lang="fi">
 <head>
@@ -12,7 +12,7 @@
 <!--Navikointi-->
         <?php 
             include_once("yhteys.php");
-            session_start();
+            
         
             if (!isset($_SESSION['rooli'])) {
                 include "naviGuest.php";

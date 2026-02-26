@@ -10,7 +10,6 @@
 <body class="rekisteri">
         <?php 
         //navikointi ja yhteys
-            session_start();
             include_once("yhteys.php");
             if (!isset($_SESSION['rooli'])) {
                 include "naviGuest.php";

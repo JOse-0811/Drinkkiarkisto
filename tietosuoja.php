@@ -8,8 +8,8 @@
 </head>
 <body class="tietosuoja">
     <?php
-    session_start();
     include_once("yhteys.php");
+    session_start();
     if (!isset($_SESSION['rooli'])) {
         include "naviGuest.php";
     }

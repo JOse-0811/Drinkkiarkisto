@@ -10,7 +10,6 @@
 </head>
 <body class="poisto">
         <?php 
-            session_start();
             include_once("yhteys.php");
             if (!isset($_SESSION['rooli'])) {
                 include "naviGuest.php";
