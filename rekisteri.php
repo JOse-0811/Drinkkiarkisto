@@ -31,7 +31,7 @@
     </form>
     <br>
     <p>Rekisteröityessäsi drinkkiarkiston käyttäjäksi hyväksyt henkilötietojesi käsitelyehdot.</p>
-    <p>Lue täältä <a href="http://localhost/JOSETTE/Tietokanta/tietosuoja.php">drinkkiarkiston tietosuojaseloste</a>.</p>
+    <p>Lue täältä <a href="tietosuoja.php">drinkkiarkiston tietosuojaseloste</a>.</p>
     <?php
 
 

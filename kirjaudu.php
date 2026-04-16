@@ -32,7 +32,7 @@
     <button type="submit" name="kirjaudu">Kirjaudu</button>
     </form>
     <p>Jos sinulla ei ole käyttäjätunnusta sinun pitää rekistöröityä käytäjäksi.</p>
-    <p>Pääset täältä <a href="http://localhost/JOSETTE/Tietokanta/rekisteri.php">rekisteröitymään käyttäjäksi</a>.</p>
+    <p>Pääset täältä <a href="rekisteri.php">rekisteröitymään käyttäjäksi</a>.</p>
     <?php
 
     if(isset($_POST['kirjaudu'])){
